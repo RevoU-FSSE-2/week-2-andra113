@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#ffb58a, #ff0065)
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    margin: 10;
+    padding: 0;
+}
+
+nav > ul > li {
+    text-decoration: none;
+    margin-left: 10px;
+}

@@ -1,3 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -6,27 +12,26 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #ffb58a, #ff0065);
-  font-size: 15px;
+  font-size: 16px;
   color: white;
-  margin-top: -58px;
-  margin-left: 0;
-  margin-right:0;
-
+  padding: 10px 20px;
+  z-index: 1;
 }
 
-nav > b {
-  color: white;
-  margin-left: 10px;
+nav > h1 {
+  font-family: "Norse", sans-serif;
+  font-size: 20px;
+  margin: 0;
 }
+
 nav > ul {
   list-style: none;
   display: flex;
-  margin: 10;
+  margin: 0;
   padding: 0;
 }
 
 nav > ul > li {
-  text-decoration: none;
   margin-left: 10px;
 }
 
@@ -34,24 +39,28 @@ header {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 0px;
-  color: #ff0065
-  ;
+  color: #ff0065;
 }
 
 header > h1 {
-  font-family: "Norse";
+  font-size: 28px;
+}
+
+#favorite-recipes {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .grid-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .grid-container > div {
-  flex: 0 0 25%; /* Each item occupies 25% of the container width */
   background-color: #f2f2f2;
   padding: 10px;
   box-sizing: border-box;
@@ -60,48 +69,28 @@ header > h1 {
 .grid-container > div > img {
   width: 100%;
   height: auto;
-  max-width: 100%; /* Ensure images don't exceed their container width */
-  max-height: 100%; /* Ensure images don't exceed their container height */
+  max-width: 100%;
+  max-height: 100%;
 }
 
-
-#favorite-recipes h2 {
-  color: #ff0065;
-  margin-top: 30px;
-  margin-bottom: 20px;
+#cooking-facts {
   text-align: center;
-}
-
-.centered-section {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.centered-section h2 {
-  color: #ff0065;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 30px;
-}
-
-#cooking-facts h2{
-  color: #ff0065;
+  gap: 20px;
 }
 
 .facts {
   text-align: left;
-  margin-right: 20px;
 }
 
 .image {
-  text-align: right;
   max-width: 50%;
 }
 
@@ -117,19 +106,39 @@ header > h1 {
   font-style: italic;
 }
 
-.centered-text {
+#cooking-video {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; 
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#recipe-submission {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #recipe-submission form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-#recipe-submission h2{
-  text-align: center;
+#recipe-submission h2 {
+  margin-bottom: 20px;
 }
 
 #recipe-submission fieldset {
@@ -154,4 +163,3 @@ header > h1 {
   font-size: 16px;
   cursor: pointer;
 }
-

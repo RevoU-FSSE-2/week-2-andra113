@@ -1,6 +1,7 @@
 nav {
   position: sticky;
   top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +9,8 @@ nav {
   font-size: 15px;
   color: white;
   margin-top: -58px;
+  margin-left: 0;
+  margin-right:0;
 
 }
 

@@ -51,6 +51,7 @@ header {
   margin-top: 50px;
   margin-bottom: 50px;
   color: #ff0065;
+  text-shadow:2px 2px #ffb58a;
 }
 
 header > h1 {

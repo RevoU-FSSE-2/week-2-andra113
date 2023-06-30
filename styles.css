@@ -18,7 +18,6 @@ h2 {
 nav {
   position: sticky;
   top: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,11 +46,17 @@ nav > ul > li {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
   color: #ff0065;
   text-shadow:2px 2px #ffb58a;
+  background-image: url(Images/header\ background\ image.jpg);
+  background-size: cover;
+  background-position: top center;
 }
 
 header > h1 {
